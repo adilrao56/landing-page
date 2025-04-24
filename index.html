@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <!-- Logo -->
+        <div class="flex-shrink-0 text-xl font-bold text-indigo-600">
+          MyBrand
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="hover:text-indigo-600">Home</a>
+          <a href="#" class="hover:text-indigo-600">About</a>
+          <a href="#" class="hover:text-indigo-600">Services</a>
+          <a href="#" class="hover:text-indigo-600">Contact</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="menu-btn" class="text-gray-800 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden px-4 pb-4 hidden">
+      <a href="#" class="block py-2 hover:text-indigo-600">Home</a>
+      <a href="#" class="block py-2 hover:text-indigo-600">About</a>
+      <a href="#" class="block py-2 hover:text-indigo-600">Services</a>
+      <a href="#" class="block py-2 hover:text-indigo-600">Contact</a>
+    </div>
+  </nav>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
+<!-- Hero Section -->
+<section class="bg-indigo-600 text-white py-24">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight mb-6">
+        Build Your Dream Website with Confidence
+      </h1>
+      <p class="text-lg sm:text-xl text-indigo-200 mb-8">
+        Fast. Modern. Beautiful. Everything you need to launch your project or business.
+      </p>
+      <a href="#"
+         class="inline-block bg-white text-indigo-600 font-semibold px-8 py-3 rounded-lg shadow-md hover:bg-gray-100 transition">
+        Get Started Now
+      </a>
+    </div>
+  </section>
+<!-- Features & Services Section -->
+<section class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      
+      <!-- Section Title -->
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+      <p class="text-gray-600 text-lg mb-12">
+        We offer powerful solutions to help you build and grow your online presence.
+      </p>
+  
+      <!-- Features Grid -->
+      <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-3 text-left">
+        
+        <!-- Feature 1 -->
+        <div class="p-6 bg-gray-50 rounded-lg shadow hover:shadow-lg transition">
+          <div class="text-indigo-600 mb-4">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M3 4a1 1 0 011-1h2.586a1 1 0 01.707.293l1.414 1.414A1 1 0 009.414 5H20a1 1 0 011 1v13a1 1 0 01-1 1H4a1 1 0 01-1-1V4z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Custom Web Design</h3>
+          <p class="text-gray-600">Beautiful, responsive websites tailored to your brand and audience.</p>
+        </div>
+  
+        <!-- Feature 2 -->
+        <div class="p-6 bg-gray-50 rounded-lg shadow hover:shadow-lg transition">
+          <div class="text-indigo-600 mb-4">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M11 17a4 4 0 004-4V5a4 4 0 00-8 0v8a4 4 0 004 4zm0 0v4m0 0h4m-4 0H7" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">E-Commerce Integration</h3>
+          <p class="text-gray-600">Sell products or services directly from your website with ease.</p>
+        </div>
+  
+        <!-- Feature 3 -->
+        <div class="p-6 bg-gray-50 rounded-lg shadow hover:shadow-lg transition">
+          <div class="text-indigo-600 mb-4">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M8 16h8M8 12h8m-6 4v4m2-4v4m-9-5a9 9 0 1118 0 9 9 0 01-18 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">SEO & Marketing</h3>
+          <p class="text-gray-600">Rank higher on search engines and attract more visitors to your site.</p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+<!-- About Section -->
+<section class="bg-gray-100 py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">About Us</h2>
+      <p class="text-gray-600 text-lg mb-6">
+        We are a passionate team dedicated to building clean, modern websites that are not only visually stunning but also fast and user-friendly.
+      </p>
+      <p class="text-gray-600 text-lg">
+        With a focus on simplicity and functionality, our mission is to empower individuals and businesses with digital tools that make a real impact. Whether you're launching your first site or upgrading your brand, we’re here to bring your vision to life.
+      </p>
+    </div>
+  </section>
+<!-- Footer Section -->
+<footer class="bg-gray-900 text-gray-300 py-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        
+        <!-- Brand Info -->
+        <div>
+          <h2 class="text-2xl font-bold text-white mb-4">YourBrand</h2>
+          <p class="text-sm text-gray-400">
+            Creating modern solutions to boost your business online.
+          </p>
+        </div>
+  
+        <!-- Navigation Links -->
+        <div>
+          <h3 class="text-xl font-semibold text-white mb-4">Quick Links</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-indigo-500">About</a></li>
+            <li><a href="#" class="hover:text-indigo-500">Services</a></li>
+            <li><a href="#" class="hover:text-indigo-500">Projects</a></li>
+            <li><a href="#" class="hover:text-indigo-500">Contact</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact Info -->
+        <div>
+          <h3 class="text-xl font-semibold text-white mb-4">Contact</h3>
+          <p class="text-sm text-gray-400">Email: <a href="mailto:info@yourbrand.com" class="text-indigo-500">info@yourbrand.com</a></p>
+          <p class="text-sm text-gray-400">Phone: <a href="tel:+1234567890
+        
